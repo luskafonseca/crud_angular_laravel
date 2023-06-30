@@ -1,0 +1,18 @@
+<div class="container">
+  <br><br>
+  <h2>Detalhes do Produto</h2>
+
+  <div class="card">
+    <div class="card-body">
+      <div *ngIf="product">
+        <p class="card-text"><strong>ID:</strong> {{ product.id }}</p>
+        <p class="card-text"><strong>Nome:</strong> {{ product.name }}</p>
+        <p class="card-text"><strong>Categoria:</strong> {{ product.category }}</p>
+        <p class="card-text"><strong>Valor:</strong> {{ product.value }}</p>
+        <p class="card-text"><strong>Data de Vencimento:</strong> {{ product.expiration_date }}</p>
+        <p class="card-text"><strong>Quantidade em Estoque:</strong> {{ product.quantity }}</p>
+        <p class="card-text"><strong>Perecível:</strong> {{ product.perishable ? 'Sim' : 'Não' }}</p>
+      </div>
+    </div>
+  </div>
+</div>

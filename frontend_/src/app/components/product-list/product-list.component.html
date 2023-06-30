@@ -1,0 +1,38 @@
+<br><br>
+<div id="modal">
+<div>
+<h2>Lista de Produtos</h2>
+<button routerLink="/products/new">Novo Produto</button>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Categoria</th>
+      <th>Valor</th>
+      <th>Data de Vencimento</th>
+      <th>Quantidade em Estoque</th>
+      <th>Perecível</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.category }}</td>
+      <td>{{ product.value }}</td>
+      <td>{{ product.expiration_date }}</td>
+      <td>{{ product.quantity }}</td>
+      <td>{{ product.perishable ? 'Sim' : 'Não' }}</td>
+      <td>
+        <button (click)="editProduct(product.id)">Editar</button>
+        <button (click)="deleteProduct(product.id)">Excluir</button>
+        
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
