@@ -1,6 +1,6 @@
 ﻿# Crud_Angular_Laravel
 Crud Angular e Laravel
-Descrição curta da aplicação.
+
 
 # Pré-requisitos
 Node.js (versão 18.16)
@@ -42,8 +42,6 @@ ng serve
 
 Acesse a aplicação em http://localhost:4200 no seu navegador.
 
-Contribuição
-Se você quiser contribuir com este projeto, sinta-se à vontade para abrir um Pull Request. Será um prazer receber suas contribuições.
 
 Contato
 Lucas Fonseca
